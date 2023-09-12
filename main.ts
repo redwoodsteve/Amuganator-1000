@@ -8,6 +8,13 @@ function changeCHNL () {
 let currentCHNL = 0
 radio.setGroup(0)
 radio.setTransmitPower(7)
+basic.showLeds(`
+    . # # # .
+    . . # # #
+    . # # # #
+    . # # # .
+    . # . # .
+    `)
 // Change this to the string you want to send
 let keyID = "GET AMUGGED"
 basic.forever(function () {
@@ -16,5 +23,4 @@ basic.forever(function () {
     // Change this to number to be sent
     radio.sendNumber(333)
     changeCHNL()
-    basic.showString("Broadcasting " + keyID)
 })
