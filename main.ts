@@ -1,3 +1,8 @@
+function muisiec () {
+    music.play(music.tonePlayable(2222, music.beat(BeatFraction.Whole)), music.PlaybackMode.InBackground)
+    music.play(music.tonePlayable(1500, music.beat(BeatFraction.Whole)), music.PlaybackMode.InBackground)
+    music.play(music.tonePlayable(1000, music.beat(BeatFraction.Whole)), music.PlaybackMode.InBackground)
+}
 function changeCHNL () {
     if (currentCHNL >= 255) {
         currentCHNL = 0
